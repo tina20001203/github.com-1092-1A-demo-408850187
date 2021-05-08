@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  'logo header header header'
+  'article aside aside aside'
+  'footer footer footer footer' ;
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 600;
+  margin: 1.5rem auto;
+}
+
+#logo {
+  height: 3rem;
+  border-width: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color: rgb(93, 143, 190);
+  background-color: rgba(252, 191, 191, 0.781);
+  text-align: center;
+  font-family: monospace;
+  grid-area: logo;
+}
+
+#header {
+  height: 3rem;
+  border-width: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color: rgb(93, 143, 190);
+  background-color: rgb(250, 230, 187);
+  text-align: center;
+  font-family: monospace;
+  grid-area: header;
+} 
+
+#article {
+  width: 100%;
+  height: 20rem;
+  border-width: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color:  rgb(13, 65, 30);
+  background-color: rgba(222, 123, 235, 0.829);
+  text-align: center;
+  font-family: monospace;
+  grid-area: article;
+}
+
+nav {
+  width: 80%;
+  margin-left: 1rem;
+  height: 17.5rem;
+  background-color: rgba(127, 198, 245, 0.781);
+  margin-top: 0.5rem;
+  text-align: center;
+  font-family: monospace;
+  overflow: hidden;
+  grid-area: nav;
+}
+
+#aside {
+  width: 100%;
+  height: 20rem;
+  border-width: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color:  rgb(13, 65, 30);
+  background-color: rgb(220, 247, 71);
+  text-align: center;
+  font-family: monospace;
+  grid-area: aside;
+}
+
+#section {
+  width: 60%;
+  height: 17.5rem;
+  background-color: rgba(105, 207, 136, 0.829);
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  position: absolute;
+  text-align: left;
+  font-family: monospace;
+  grid-area: section;
+}
+
+#display {
+  width: 80%;
+  height: 10.5rem;
+  background-color: rgba(255, 234, 208, 0.897);
+  margin-left: 3rem;
+  margin-top: 0.5rem;
+  position: absolute;
+  text-align: left;
+  font-family: monospace;
+  grid-area: play;
+}
+
+#youtu {
+  width: 90%;
+  height: 3.5rem;
+  background-color: rgba(245, 127, 225, 0.774);
+  margin-top: 12rem;
+  margin-bottom: auto;
+  margin-left: 1.5rem;
+  position: absolute;
+  text-align: left;
+  font-family: monospace;
+  grid-area: youtu;
+}
+
+#youtu ul {
+  display: flex;
+  list-style: none; 
+}
+
+#youtu ul li {
+  width: 1rem;
+  padding: 10 5rem 5rem 15rem;
+  margin: 0 30px;
+}
+
+img {  
+  max-height: 60%;  
+  max-width: 60%; 
+  width: auto;
+  height: auto;
+  position: absolute;  
+  display: flex;
+}
+
+#footer {
+  width: 100%;
+  height: 2rem;
+  background-color: rgb(207, 133, 110);
+  margin: auto;
+  text-align: left;
+  grid-area: footer;
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'logo'
+      'header'
+      'articlle'
+      'aside'
+      'footer';
+  }
+}
