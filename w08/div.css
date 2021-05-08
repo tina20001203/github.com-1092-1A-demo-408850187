@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: rgb(232, 250, 228);
+}
+
+#container {
+  width: 90%;
+  border: 2px solid purple;
+  margin: 1.5rem auto;
+} 
+
+#head { 
+  width: 100%; 
+  height: 7rem; 
+  background-color: rgba(127, 198, 245, 0.781); 
+  text-align: center; 
+} 
+
+#head ul { 
+  display: flex; 
+  list-style: none; 
+} 
+
+#heading { 
+  margin-top: 0.5rem; 
+  margin-left: 2rem; 
+} 
+
+#heading ul { 
+  display: flex;
+  list-style: none;
+  margin-top: 1rem;
+  padding-left: 0rem;
+}
+
+#heading li {
+  padding: 0 1rem 1rem 0.5rem;
+}
+
+#heading li a {
+  background-color: rgb(245, 250, 174);
+  padding: 0.5rem;
+}
+
+#heading li a:hover {
+  background-color: rgb(214, 194, 158);
+}
+
+#img {
+  max-width:100%; 
+  height:auto;
+  text-align: center;
+  margin-right: 1rem;
+  margin-left: auto;
+  margin-top: 0.5rem;
+}
+
+#img ul {
+  display: flex;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+#img li {
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+#img li a {
+  background-color: rgb(245, 250, 174);
+  padding: 0.5rem;
+}
+
+#img li a:hover {
+  background-color: rgb(240, 180, 70);
+}
+
+#main {
+  width: 100%;
+  background-color: rgb(245, 250, 174);
+  display: flex;
+}
+
+aside {
+  width: 20%;
+  background-color: rgb(214, 247, 160);
+}
+
+aside ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  margin-top: 1.7rem;
+  padding-left: 2rem;
+}
+
+aside li {
+  margin: 1.5rem auto;
+  top: 0.5rem;
+}
+
+aside li a {
+  background-color: rgb(234, 189, 243);
+  padding: 0.5rem;
+}
+
+aside li a:hover {
+  background-color: rgb(245, 96, 183);
+}
+
+#section {
+  width: 80%;
+  background-color: rgb(250, 192, 192);
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 2.5%;
+  top: 2.5%;
+  height: 95%;
+  width: 95%;
+  position: absolute;
+  padding: 0.75rem;
+}
+
+#footer {
+  width: 100%;
+  height: 7rem;
+  background-color: darkgrey;
+}
