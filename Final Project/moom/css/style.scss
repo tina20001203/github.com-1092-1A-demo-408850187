@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+  }
+
+  html {
+    font-size: 10px;
   }
   
   body {
@@ -64,4 +71,52 @@
         padding: 2rem;
     }
   }
+
+  /* Section */
+  header {
   
+    .logo {
+      margin: 7rem;
+      border-bottom: #000000 solid 0.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      font-family: inherit;
+    }
+  }
+
+  section.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    grid-gap: 3rem;
+    min-width: 30rem;
+   
+    img {
+      width: 60%;
+      height: auto;
+    }
+    div {
+      line-height: 2.5rem;
+
+      h4 {
+        font-size: 1.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p {
+        color: rgb(167, 167, 175);
+      }
+    }
+    
+  }
+  
+  @media (min-width: 768px) {
+    header {
+      grid-template-columns: repeat(4,1fr);
+      -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  
+      .logo {
+        justify-self: start;
+      }
+    }
+  }

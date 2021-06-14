@@ -1,8 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
 }
 
 body {
@@ -74,5 +80,60 @@ ul {
 
 .main_nav .content {
   padding: 2rem;
+}
+
+/* Section */
+header .logo {
+  margin: 7rem;
+  border-bottom: #000000 solid 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  font-family: inherit;
+}
+
+section.articles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 3rem;
+  min-width: 30rem;
+}
+
+section.articles img {
+  width: 60%;
+  height: auto;
+}
+
+section.articles div {
+  line-height: 2.5rem;
+}
+
+section.articles div h4 {
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section.articles div p {
+  color: #a7a7af;
+}
+
+@media (min-width: 768px) {
+  header {
+    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  }
+  header .logo {
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
 }
 /*# sourceMappingURL=style.css.map */
