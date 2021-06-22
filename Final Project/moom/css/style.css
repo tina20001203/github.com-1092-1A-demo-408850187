@@ -1,12 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 html {
   font-size: 10px;
 }
@@ -14,13 +5,13 @@ html {
 body {
   background-color: white;
   color: #000000;
-  font-size: 10px;
+  font-size: 13px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 110rem;
   margin: auto;
 }
@@ -35,13 +26,10 @@ ul {
 }
 
 /* NAV */
-.main_nav {
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -49,43 +37,105 @@ ul {
   font-size: 1rem;
 }
 
-.main_nav .logo {
-  width: 7rem;
+.nav .logo {
+  width: 12rem;
 }
 
-.main_nav ul {
+.nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main_nav ul.main_menu {
+.nav ul.menu {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-left: 2rem;
 }
 
-.main_nav ul li {
-  padding: 0 0.7rem;
+.nav ul li {
+  padding: 0 1.7rem;
 }
 
-.main_nav ul li a {
+.nav ul li a {
+  font-size: 1.5rem;
   padding-bottom: 2px;
 }
 
-.main_nav ul li a:hover {
+.nav ul li a:hover {
   border-bottom: 2px solid #262626;
 }
 
-.main_nav .content {
+.nav .content {
   padding: 2rem;
+}
+
+/* Main */
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 93rem;
+}
+
+#menu1 {
+  width: 15rem;
+}
+
+#section {
+  margin-left: 15rem;
+  margin-right: 15rem;
+  padding: 10px;
+}
+
+#section img {
+  width: 80rem;
+  height: auto;
+}
+
+#section p {
+  margin: 8rem 10rem 0rem 10rem;
+  font-size: 1.5rem;
+}
+
+#menu2 {
+  width: 15rem;
+  line-height: 2rem;
+  text-align: right;
+}
+
+#menu2 .recommended {
+  color: #be2f2f;
+}
+
+#menu2 .h3 {
+  font-size: 10rem;
+}
+
+#menu2 .artist a:hover {
+  border-bottom: 2px solid black;
+}
+
+#menu2 .publisher a:hover {
+  border-bottom: 2px solid black;
+}
+
+#menu2 .dollar {
+  font-size: 2.35rem;
+}
+
+#menu2 .sell {
+  font-size: 1.5rem;
+}
+
+#menu2 .content {
+  line-height: 2rem;
 }
 
 /* Section */
 header .logo {
   margin: 7rem;
-  border-bottom: #000000 solid 0.2rem;
+  border-bottom: 2px solid #262626;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +164,7 @@ section.articles img {
 }
 
 section.articles div {
-  line-height: 2.5rem;
+  line-height: 1rem;
 }
 
 section.articles div h4 {
@@ -124,6 +174,29 @@ section.articles div h4 {
 
 section.articles div p {
   color: #a7a7af;
+}
+
+.follow {
+  height: 5rem;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 85rem;
+}
+
+.follow * {
+  margin-left: 0.5rem;
+}
+
+.follow img {
+  width: 23px;
 }
 
 @media (min-width: 768px) {
